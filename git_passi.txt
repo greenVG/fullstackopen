@@ -1,0 +1,50 @@
+VOGLIO USARE Git E GitHub.
+
+SU GITHUB HO UN ACCOUNT E GIT E´ SUL COMPUTER
+
+MI DICI TUTTI I PASSI DA FARE PER USARLO BENE. FAMMI SAPER 
+SE TI OCCORRE PIÚ INFORMAZIONE.
+
+git config --global user.name "Il Tuo Nome"
+git config --global user.email "tua@email.com"
+
+PASSO 1: Configura Git sul tuo computer
+
+git config --global user.name "Gustavo Pittaluga"
+git config --global user.email "verdegenius@gmail.com"
+
+git config --list
+
+echo "# Nome Progetto" > README.md
+git add README.md
+git commit -m "Prima commit"
+
+C:\G\Helsinski\FullStack\PART00>git branch  # PER CONOSCERE LA TUA BRANCH
+* master
+
+git remote add origin https://github.com/tuo-utente/nome-repo.git
+git branch -M main  # Se la tua branch principale si chiama 'main'
+git push -u origin main
+
+https://github.com/greenVG/fullstackopen
+
+git remote remove origin
+
+git remote add origin https://github.com/greenVG/fullstackopen
+git branch -M master  
+# Se la tua branch principale si chiama 'main'
+git push -u origin master
+
+C:\G\Helsinski\FullStack\PART00\04diagram.md
+
+git add PART00/0.5_Single_page_app.md
+git add PART00/0.6_New_note_Single.md
+git push
+
+
+part0
+
+
+
+
+
