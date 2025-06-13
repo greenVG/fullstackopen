@@ -1,0 +1,270 @@
+/* GLOBAL RESET AND BASE STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY STYLING - OVERALL PAGE APPEARANCE */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* MAIN APP CONTAINER */
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* MAIN HEADING STYLES */
+h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+/* SECTION HEADINGS */
+h3 {
+  color: #34495e;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+/* FILTER SECTION STYLING */
+.filter-container {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+.filter-container label {
+  font-weight: 500;
+  color: #495057;
+  margin-right: 10px;
+}
+
+/* INPUT FIELD STYLES - SHARED BY FILTER AND FORM INPUTS */
+input[type="text"] {
+  padding: 8px 12px;
+  border: 2px solid #e9ecef;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* FORM SECTION STYLING */
+.form-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #495057;
+}
+
+/* BUTTON STYLING - IMPROVED VISIBILITY AND CLARITY */
+button {
+  background-color: #d4f6d8;  /* CHANGED TO GREEN FOR BETTER "ADD" ASSOCIATION */
+  color: orange;
+  border: none;
+  padding: 12px 24px;         /* INCREASED PADDING FOR LARGER CLICK AREA */
+  font-size: 16px;
+  font-weight: 600;           /* INCREASED FONT WEIGHT FOR BETTER READABILITY */
+  border-radius: 6px;         /* SLIGHTLY MORE ROUNDED CORNERS */
+  cursor: pointer;
+  transition: all 0.3s ease;  /* SMOOTH TRANSITION FOR ALL PROPERTIES */
+  text-transform: uppercase;  /* UPPERCASE TEXT FOR EMPHASIS */
+  letter-spacing: 0.5px;      /* SLIGHT LETTER SPACING FOR CLARITY */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* SUBTLE SHADOW FOR DEPTH */
+}
+
+button:hover {
+  background-color: #229954;  /* DARKER GREEN ON HOVER */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* ENHANCED SHADOW ON HOVER */
+  transform: translateY(-1px); /* SLIGHT LIFT EFFECT */
+}
+
+button:active {
+  background-color: #1e8449;  /* EVEN DARKER GREEN WHEN PRESSED */
+  transform: translateY(0px);  /* RETURN TO NORMAL POSITION */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ORIGINAL SHADOW */
+}
+
+/* PERSONS LIST STYLING */
+.persons-list {
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+.person-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid #e9ecef;
+  transition: background-color 0.2s ease;
+}
+
+.person-item:last-child {
+  border-bottom: none;
+}
+
+.person-item:hover {
+  background-color: #f8f9fa;
+}
+
+.person-info {
+  flex-grow: 1;
+}
+
+.person-name {
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 2px;
+}
+
+.person-number {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+/* DELETE BUTTON STYLING (IF ADDED LATER) */
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+/* EMPTY STATE STYLING */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .app-container {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    max-width: 100%;
+  }
+  
+  .person-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .person-info {
+    width: 100%;
+  }
+}
+
+/* FOCUS ACCESSIBILITY IMPROVEMENTS */
+button:focus,
+input:focus {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+}
+
+/* LOADING STATE  */
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #7f8c8d;
+}
+
+
+
+/* new date 06.06.2025*/
+
+.error {
+  color: red;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-color: red; 
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+.success {
+  color: green;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-color: green;    
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+

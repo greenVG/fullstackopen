@@ -1,0 +1,12 @@
+// this file with the original name: index.js
+// it seems not necesarry
+
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+
+// OTTIENE IL DIV CON ID "root" DALL'HTML
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+// RENDERIZZA IL COMPONENTE APP ALL'INTERNO DEL DIV ROOT
+root.render(<App />)

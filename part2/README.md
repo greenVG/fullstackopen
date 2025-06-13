@@ -1,0 +1,1 @@
+It contains the exercises from Part 2 of the Full Stack Open course held by the Department of Computer Science at the University of Helsinki.
