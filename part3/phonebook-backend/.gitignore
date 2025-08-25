@@ -1,0 +1,4 @@
+# Ignore node_modules to keep Git repo clean
+node_modules
+
+
